@@ -12,7 +12,7 @@ Console.Write("Введите число: ");
 string num = Console.ReadLine();
 int number = int.Parse(num);
 
-while (i < number)
+while (i <= number)
 {
     if (i % 2 == 0)
     {
