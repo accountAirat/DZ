@@ -66,7 +66,8 @@ while (i > 0)
     }
     else
     {
-        Console.WriteLine("Ввели не верный символ, попробуйте ещё раз");
+        Console.WriteLine("Ввели не верный символ, попробуйте ещё раз.");
+        menu = 0;
     }
 }
 Console.WriteLine("До встречи!");
