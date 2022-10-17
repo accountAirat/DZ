@@ -43,12 +43,12 @@ void FillArray(double[,] array)
 void AverageСolumn(double[,] array)
 {
     Console.Write("Среднее арифметическое каждого столбца: ");
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(1); i++)
     {
         double sum = 0;
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(0); j++)
         {
-            sum += array[i, j];
+            sum += array[j, i];
         }
         Console.Write(Math.Round(sum / array.GetLength(1), 1) + "; ");
     }
